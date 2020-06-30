@@ -63,15 +63,6 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc
 
 ### Design files
 
-<!-- Coming soon! -->
-
-**Electric Select**
-
-[design and assets](https://hychalknotes.s3.amazonaws.com/electric-select.zip)
-
-**Galass Handbags**
-
-[design and assets](https://hychalknotes.s3.amazonaws.com/galass-handbags.zip)
 
 **Hangry Tummy**
 
