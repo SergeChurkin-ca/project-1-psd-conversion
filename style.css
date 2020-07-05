@@ -1,148 +1,194 @@
-        /* STYLINING */
-        
-        .wrapper {
-            max-width: 1400px;
-            margin: 0 auto;
-            width: 95%;
-        }
-        /* TYPOGRAPHY   */
-        
-        h1,
-        h2 {
-            color: #e75605;
-        }
-        
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            /* font-size: 146.4px; */
-            font-size: calc(25px + (146.4 - 25) * ((100vw - 300px) / (1600 - 300)));
-            /* font-weight: regular; */
-            line-height: 120px;
-        }
-        
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 42px;
-            font-weight: bold;
-        }
-        
-        .reachout a {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            /* color: #ffffff; */
-            font-size: 30px;
-            text-align: center;
-        }
-        
-        button {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            text-align: center;
-            line-height: 29px;
-        }
-        
-        placeholder {
-            font-size: 20px;
-        }
-        
-        input {
-            line-height: 27px;
-        }
-        
-        p {
-            font-family: 'Catamaran', sans-serif;
-            font-size: 20px;
-            line-height: 29px;
-        }
-        
-        nav li {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: regular;
-            line-height: 29px;
-        }
-        
-        nav,
-        h2 {
-            text-transform: uppercase;
-        }
-        /* EVERYTHING */
-        
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        li {
-            list-style: none;
-        }
-        
-        .reachout {
-            background-color: #e75605;
-        }
-        
-        .reachout a {
-            color: #ffffff;
-        }
-        
-        .reachout li {
-            display: inline-block;
-        }
-        
-        .copyright {
-            background-color: black;
-            color: #ffffff;
-            font-size: 15px;
-            text-align: center;
-        }
-        /* NAVIGATION */
-        
-        nav {
-            text-align: center;
-        }
-        
-        nav li {
-            display: inline;
-            padding: 1.5em 0.9em;
-        }
-        
-        header .fa-bars {
-            visibility: hidden;
-        }
-        /* HEADER */
-        
-        header {
-            background: url('assets/header-burger.png') no-repeat left bottom;
-            background-size: 50%;
-            height: 70vh;
-        }
-        
-        header .container {
-            float: right;
-            position: relative;
-            padding: 0 0 0 15%;
-        }
-        
-        header h1 {
-            padding: 0 38%;
-            float: left;
-        }
-        
-        .social i {
-            color: #e75605;
-            padding: 0.5em;
-            display: block;
-        }
-        
-        .social ul {
-            /* float: right; */
-            /* margin-bottom: 25em; */
-            /* margin-top: -10em; */
-            /* margin-left: 67em; */
-            /* padding: 0 50% 0 0%; */
-            position: absolute;
-            top: 25%;
-            right: 0;
-            left: 94%;
-        }
+            /* STYLINING */
+            
+            .wrapper {
+                max-width: 1400px;
+                margin: 0 auto;
+                width: 95%;
+            }
+            /* TYPOGRAPHY   */
+            
+            h1,
+            h2 {
+                color: #e75605;
+            }
+            
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                /* font-size: 146.4px; */
+                font-size: calc(25px + (146.4 - 25) * ((100vw - 300px) / (1600 - 300)));
+                /* font-weight: regular; */
+                line-height: 120px;
+            }
+            
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 42px;
+                font-weight: bold;
+            }
+            
+            .reachout a {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                /* color: #ffffff; */
+                font-size: 30px;
+                text-align: center;
+            }
+            
+            button {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                line-height: 29px;
+            }
+            
+            placeholder {
+                font-size: 20px;
+            }
+            
+            input {
+                line-height: 27px;
+            }
+            
+            p {
+                font-family: 'Catamaran', sans-serif;
+                font-size: 20px;
+                line-height: 29px;
+            }
+            
+            nav li {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: regular;
+                line-height: 29px;
+            }
+            
+            nav,
+            h2 {
+                text-transform: uppercase;
+            }
+            /* EVERYTHING */
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            .reachout {
+                background-color: #e75605;
+            }
+            
+            .reachout a {
+                color: #ffffff;
+            }
+            
+            .reachout li {
+                display: inline-block;
+            }
+            
+            .copyright {
+                background-color: black;
+                color: #ffffff;
+                font-size: 15px;
+                text-align: center;
+            }
+            /* NAVIGATION */
+            
+            nav {
+                text-align: center;
+            }
+            
+            nav li {
+                display: inline;
+                padding: 1.5em 0.9em;
+            }
+            
+            header .fa-bars {
+                visibility: hidden;
+            }
+            /* HEADER */
+            
+            header {
+                background: url('assets/header-burger.png') no-repeat left bottom;
+                background-size: 50%;
+                height: 70vh;
+            }
+            
+            header .container {
+                float: right;
+                position: relative;
+                padding: 0 0 0 15%;
+            }
+            
+            header h1 {
+                padding: 0 38%;
+                float: left;
+            }
+            
+            .social i {
+                color: #e75605;
+                padding: 0.5em;
+                display: block;
+            }
+            
+            .social ul {
+                /* float: right; */
+                /* margin-bottom: 25em; */
+                /* margin-top: -10em; */
+                /* margin-left: 67em; */
+                /* padding: 0 50% 0 0%; */
+                position: absolute;
+                top: 25%;
+                right: 0;
+                left: 94%;
+            }
+            /* NEW and EXPERIENCE */
+            
+            .new .container {
+                float: left;
+                width: 50%;
+            }
+            
+            .experience .container {
+                float: right;
+                width: 50%;
+            }
+            
+            .text {
+                padding: 7% 7% 0;
+            }
+            
+            .container img {
+                width: 100%;
+            }
+            
+            .desserts .wrapper {
+                background-color: #f4f4f4;
+                padding: 2em 2em;
+            }
+            
+            .desserts .container {
+                padding: 5em;
+                float: left;
+            }
+            
+            .desserts .text {
+                /* width: 60%; */
+                padding: 3em;
+                width: calc(90% - 25em);
+            }
+            
+            .reachout {
+                height: 30vh;
+                text-align: center;
+            }
+            
+            .gallery li {
+                width: calc (100% / 3 - 0.8em);
+                display: inline-block;
+                padding: 0 0.8em;
+            }
