@@ -5,18 +5,21 @@
     <title>Project 1 psd conversion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="setup.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link href="style.css" rel="stylesheet">
+
 
 </head>
 
 <body>
 
-    <header>
-        <div class="wrapper">
+    <header class="wrapper">
+        <div class="wrapper clearfix">
             <nav>
-                <ul class="clearfix">
+                <ul>
                     <li>
                         <a href="">home</a>
                     </li>
@@ -31,15 +34,17 @@
                     </li>
                 </ul>
             </nav>
-            <i class="fa fa-bars"></i>
-            <h1>Hangry Tummy</h1>
-            <div class="social">
-                <ul class="clearfix">
-                    <li><a class="ins-ic mr-3 " role="button "><i class="fab fa-lg fa-instagram "></i></a></li>
-                    <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-facebook-f "></i></a></li>
-                    <li><a class="tw-ic mr-3 " role="button "><i class="fab fa-lg fa-snapchat-ghost"></i></a></li>
-                    <li><a class="tw-ic mr-3 " role="button "><i class="fab fa-lg fa-twitter "></i></a></li>
-                </ul>
+            <div class="container">
+                <i class="fa fa-bars"></i>
+                <h1>Hangry Tummy</h1>
+                <div class="social clearfix">
+                    <ul>
+                        <li><a class="ins-ic mr-3 " role="button "><i class="fab fa-lg fa-instagram "></i></a></li>
+                        <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-facebook-f "></i></a></li>
+                        <li><a class="tw-ic mr-3 " role="button "><i class="fab fa-lg fa-snapchat-ghost"></i></a></li>
+                        <li><a class="tw-ic mr-3 " role="button "><i class="fab fa-lg fa-twitter "></i></a></li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -90,9 +95,9 @@
             </div>
         </section>
 
-        <section class="reachout" id="reachout">
+        <section class="wrapper reachout" id="reachout">
 
-            <div class="wrapper">
+            <ul>
                 <li>
                     <a href=""><i class="fas fa-location-arrow">locations</i></a>
                 </li>
@@ -102,11 +107,20 @@
                 <li>
                     <a href=""><i class="fas fa-phone">reach out</i></a>
                 </li>
-            </div>
+            </ul>
 
         </section>
 
-        <section class="gallery" id="gallery"></section>
+        <section class="wrapper gallery" id="gallery">
+            <h2>the gram</h2>
+            <div class="wrapper">
+                <ul class="gallery clearfix">
+                    <li><img src="assets/gallery-photo-1.jpg" alt="deep fried spicy chicken in a clau pot"></li>
+                    <li><img src="assets/gallery-photo-2.jpg" alt="fruit and vegetable salad containing of avocado, pappaya, mango, latuce, chickpeas, decorated with clover leaves"></li>
+                    <li><img src="assets/gallery-photo-3.jpg" alt="deep fired chicken wings sprinkled with seasame, salad and yoghurt sause"></li>
+                </ul>
+            </div>
+        </section>
 
 
     </main>
@@ -153,7 +167,7 @@
 
         </div>
 
-        <p>Copyright &copy; 2019 HackerYou</p>
+        <p class="copyright">Copyright &copy; 2019 HackerYou</p>
 
     </footer>
 
