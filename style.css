@@ -42,6 +42,7 @@ button {
     font-size: 20px;
     text-align: center;
     line-height: 29px;
+    text-transform: uppercase;
 }
 
 placeholder {
@@ -50,6 +51,7 @@ placeholder {
 
 input {
     line-height: 27px;
+    padding: 0 1.5em;
 }
 
 p,
@@ -99,6 +101,10 @@ li {
     text-align: center;
 }
 
+button {
+    padding: 0.35em 0.6em;
+}
+
 
 /* NAVIGATION */
 
@@ -120,7 +126,7 @@ header .fa-bars {
 /* HEADER */
 
 header {
-    background: url('assets/header-burger.png') no-repeat left bottom;
+    background: url('assets/header-burger.png') no-repeat left;
     background-size: 50%;
     height: 70vh;
 }
@@ -167,7 +173,9 @@ header h1 {
 }
 
 .text {
-    padding: 7% 7% 0;
+    padding: calc(25% - 15em) 7% 2˜%;
+    /* padding: calc(50% - 2em); */
+    /* calc(10px + (120 - 1) * ((100vw - 300px)/(1600 - 300))); */
 }
 
 .container img {
@@ -239,37 +247,42 @@ footer {
 }
 
 footer .wrapper {
-    /* padding: 0 0 0 3em; */
+    padding: 0 0 0 3em;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0 3% 3%;
 }
 
 footer h2 {
-    padding-left: 1em;
+    padding-left: 0.7em;
 }
 
 footer section {
-    /* width: calc( 50% - 2em); */
-    /* float: left; */
     padding: 0;
+    width: 49.5%;
 }
 
 .contact {
     float: left;
+    margin: 0 1% 0 0;
 }
 
 .subscribe {
     float: right;
 }
 
-footer p {
+˜ footer p {
     line-height: 1em;
+    width: 100%;
 }
 
 input {
-    width: 70%;
+    width: calc( 90% - 6em);
     height: 3em;
     margin: 1em 0;
+}
+
+footer button {
+    left: 0;
 }
 
 .copyright {
