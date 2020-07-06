@@ -17,10 +17,10 @@ h2 {
 h1 {
     font-family: 'Montserrat', sans-serif;
     /* font-size: 146.4px; */
-    font-size: calc(25px + (146.4 - 25) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(45px + (146.4 - 45) * ((100vw - 300px) / (1600 - 300)));
     /* font-weight: regular; */
     /* line-height: 120px; */
-    line-height: calc(10px + (120 - 1) * ((100vw - 300px)/(1600 - 300)));
+    line-height: calc(45px + (120 - 45) * ((100vw - 300px)/(1600 - 300)));
 }
 
 h2 {
@@ -103,6 +103,8 @@ li {
 
 button {
     padding: 0.35em 0.6em;
+    border: solid 0.15em #e75605;
+    background: white;
 }
 
 
@@ -120,6 +122,7 @@ nav li {
 
 header .fa-bars {
     visibility: hidden;
+    font-size: 1.5em;
 }
 
 
@@ -156,24 +159,24 @@ header h1 {
     position: absolute;
     top: 25%;
     right: 0;
-    left: 94%;
+    /* left: 94%; */
 }
 
 
 /* NEW and EXPERIENCE */
 
 .new .container {
-    float: left;
-    width: 50%;
-}
-
-.experience .container {
     float: right;
     width: 50%;
 }
 
+.experience .container {
+    float: left;
+    width: 50%;
+}
+
 .text {
-    padding: calc(25% - 15em) 7% 2˜%;
+    padding: calc(25% - 15em) 7% 2%;
     /* padding: calc(50% - 2em); */
     /* calc(10px + (120 - 1) * ((100vw - 300px)/(1600 - 300))); */
 }
@@ -234,13 +237,13 @@ header h1 {
     padding: 1em;
 }
 
-
-/* FOOTER */
-
 .gallery img {
     width: 100%;
     height: auto;
 }
+
+
+/* FOOTER */
 
 footer {
     background-color: #f4f4f4;
@@ -253,7 +256,8 @@ footer .wrapper {
 }
 
 footer h2 {
-    padding-left: 0.7em;
+    padding-left: 0.9em;
+    margin-bottom: 0;
 }
 
 footer section {
@@ -270,23 +274,141 @@ footer section {
     float: right;
 }
 
-˜ footer p {
+footer p {
     line-height: 1em;
     width: 100%;
 }
 
 input {
-    width: calc( 90% - 6em);
-    height: 3em;
-    margin: 1em 0;
+    width: calc( 80% - 1em);
+    height: 3.2em;
+    float: left;
 }
 
 footer button {
-    left: 0;
+    margin: 0;
+}
+
+.form-container {
+    margin-top: 1em;
 }
 
 .copyright {
     height: 3em;
     padding: 1em;
     margin: 0;
+}
+
+
+/* ---- MEDIAQUERIES /* ------------------------------------------ */
+
+@media (max-width: 1100px) {
+    .social ul {
+        top: 100%;
+        right: 2%;
+    }
+    .social i,
+    li {
+        display: inline;
+    }
+    .text p {
+        padding: 2em;
+        margin: 0em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 880px) {
+    .wrapper,
+    .container,
+    section {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container,
+    input {
+        padding: 0;
+        /* clear: both; */
+        text-align: center;
+    }
+    .new .container,
+    .experience .container,
+    .desserts .container,
+    footer section,
+    input,
+    form button {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    .img-container {
+        height: 10%;
+    }
+    .img-container img {
+        height: 20em;
+        width: 100%;
+        object-fit: cover;
+    }
+    .reachout {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    .reachout ul {
+        padding-top: 3em;
+        padding-bottom: 5em;
+        width: 95%;
+    }
+    .reachout li {
+        width: 100%;
+        margin: 1em auto;
+        padding: 0;
+    }
+    .gallery li {
+        width: calc(100% / 2 - 0.8em)
+    }
+    .gallery li:nth-child(3) {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer-nav ul {
+        padding: 2em 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media(max-width: 640px) {
+    .main-nav,
+    .social {
+        display: none;
+    }
+    header {
+        position: relative;
+        background-size: 70%;
+        background-position: -6em;
+    }
+    h1 {
+        left: 0;
+    }
+    header .fa-bars {
+        visibility: visible;
+        position: absolute;
+        top: 1em;
+        right: 0em;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery li:nth-child(n+2) {
+        display: none;
+    }
+    .gallery li {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
