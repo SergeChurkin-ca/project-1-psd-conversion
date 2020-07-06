@@ -18,7 +18,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     /* font-size: 146.4px; */
     font-size: calc(45px + (146.4 - 45) * ((100vw - 300px) / (1600 - 300)));
-    /* font-weight: regular; */
+    font-weight: regular;
     /* line-height: 120px; */
     line-height: calc(45px + (120 - 45) * ((100vw - 300px)/(1600 - 300)));
 }
@@ -122,7 +122,7 @@ nav li {
 
 header .fa-bars {
     visibility: hidden;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 
@@ -311,10 +311,21 @@ footer button {
     li {
         display: inline;
     }
-    .text p {
+    .experience .text p {
         padding: 2em;
+    }
+    .text p {
+        padding: 0;
         margin: 0em;
         width: 100%;
+    }
+    input {
+        height: 2.5em;
+        margin: 0.6em 0;
+    }
+    footer button {
+        height: 2em;
+        margin: 0 0 3em;
     }
 }
 
@@ -326,10 +337,18 @@ footer button {
         width: 100%;
         margin: 0 auto;
     }
+    header {
+        position: relative;
+        background-size: 80%;
+        background-position: -8em bottom;
+    }
+    h2 {
+        margin: 0 auto;
+        padding: 0em;
+    }
     .container,
     input {
         padding: 0;
-        /* clear: both; */
         text-align: center;
     }
     .new .container,
@@ -387,19 +406,18 @@ footer button {
     .social {
         display: none;
     }
-    header {
-        position: relative;
-        background-size: 70%;
-        background-position: -6em;
-    }
-    h1 {
-        left: 0;
+    header h1 {
+        position: absolute;
+        right: 0.5em;
+        top: 1em;
+        padding: 0;
+        width: 4em;
     }
     header .fa-bars {
         visibility: visible;
         position: absolute;
         top: 1em;
-        right: 0em;
+        right: 1em;
     }
 }
 
