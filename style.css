@@ -6,6 +6,12 @@
     width: 80vw;
 }
 
+#toggle {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
 
 /* TYPOGRAPHY   */
 
@@ -129,7 +135,7 @@ header .fa-bars {
 /* HEADER */
 
 header {
-    background: url('assets/header-burger.png') no-repeat left;
+    background: url('assets/header-burger.png') no-repeat left bottom;
     background-size: 50%;
     height: 70vh;
 }
@@ -342,7 +348,8 @@ footer button {
         background-size: 80%;
         background-position: -8em bottom;
     }
-    h2 {
+    h2,
+    footer h2 {
         margin: 0 auto;
         padding: 0em;
     }
@@ -402,7 +409,7 @@ footer button {
 }
 
 @media(max-width: 640px) {
-    .main-nav,
+    .toggle-menu,
     .social {
         display: none;
     }
@@ -412,12 +419,42 @@ footer button {
         top: 1em;
         padding: 0;
         width: 4em;
+        margin: 0;
+        height: auto;
+        z-index: 0;
     }
     header .fa-bars {
         visibility: visible;
+        /* position: absolute; */
+        /* right: 12em; */
+        margin-left: 12em;
+        z-index: 100;
+    }
+    /* TOGGLE MENU */
+    .toggle-menu {
         position: absolute;
-        top: 1em;
-        right: 1em;
+        z-index: 20;
+        width: 100%;
+    }
+    .toggle-menu ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* position: absolute; */
+        z-index: 10;
+    }
+    .toggle-menu li {
+        display: block;
+    }
+    #toggle:checked+ul.toggle-menu {
+        right: 0;
+        display: block;
+        background: grey;
+    }
+    #toggle {
+        /* display: none; */
+        opacity: 0;
+        height: 10em;
     }
 }
 
