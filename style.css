@@ -347,6 +347,7 @@ footer button {
         position: relative;
         background-size: 80%;
         background-position: -8em bottom;
+        height: 50vh;
     }
     h2,
     footer h2 {
@@ -436,15 +437,20 @@ footer button {
         z-index: 20;
         width: 100%;
     }
+    .toggle-menu li a {
+        background-color: white;
+        padding: 1em 0;
+        display: block;
+    }
     .toggle-menu ul {
         width: 100%;
-        margin: 0;
-        padding: 0;
         /* position: absolute; */
         z-index: 10;
     }
     .toggle-menu li {
         display: block;
+        width: 90%;
+        text-align: center;
     }
     #toggle:checked+ul.toggle-menu {
         right: 0;
