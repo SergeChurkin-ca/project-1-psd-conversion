@@ -1,6 +1,6 @@
 # Project 1 (1 page PSD conversion)
 ## Requirement: use floats for layots, not flexboxes or grids
-
+### https://sergechurkin-ca.github.io/serge-churkin-project-one/
 ## Due date
 
 Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
