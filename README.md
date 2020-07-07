@@ -1,4 +1,5 @@
 # Project 1 (1 page PSD conversion)
+## Requirement: use floats for layots, not flexboxes or grids
 
 ## Due date
 
